@@ -1,0 +1,160 @@
+﻿/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: "trebuchet ms", sans-serif;
+	font-size: 13px;
+}
+
+/* styling */
+body {
+	background-color: white;
+	color: #333;
+	width: 480px;
+	height: auto;
+	padding: 10px 0;
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+	body {
+		width: 1024px;
+	}
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) and (orientation:portrait) {
+	body {
+		width: 768px;
+	}
+}
+@media screen and (max-width: 640px) {
+	body {
+		width: 680px;
+	}
+} 
+@media screen and (max-width: 480px) {
+	body {
+		width: 480px;
+	}
+}
+body.original {
+	background: white url(../img/cludeo_original.jpg) left top no-repeat;
+	padding-top: 270px;
+}
+body.harrypotter {
+	background: #320001 url(../img/cludeo_harrypotter.jpg) left top no-repeat;
+	padding-top: 270px;
+}
+fieldset, 
+legend,
+a {
+	background: #014d43;
+	color: white;
+}
+.harrypotter fieldset, 
+.harrypotter legend,
+.harrypotter a {
+	background: white;
+	color: #333;
+}
+fieldset {
+	margin: 0 10px 20px;
+	padding: 10px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+legend {
+	font-variant: small-caps;
+	font-weight: bold;
+	padding: 7px 15px;
+	border-top-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-webkit-border-top-left-radius: 3px;
+}
+label {
+	padding-left: 6px;
+	line-height: 25px;
+    position: relative;
+    top: -1px;
+}
+input,
+button, 
+select,
+label {
+	cursor: pointer;
+}
+button,
+select,
+textarea {
+	border: 1px solid #014d43;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+button {
+	background-color: white;
+	color: #014d43;
+	padding: 3px;
+	background-position: 3px center;
+	background-repeat: no-repeat;
+	padding-left: 22px;
+	font-weight: bold;
+}
+#ask {
+	background-image: url(../img/ask_16x16.png);
+}
+#reset {
+	background-image: url(../img/reset_16x16.png);
+}
+#crime {
+	background-image: url(../img/crime_16x16.png);
+}
+#start {
+	background-image: url(../img/start_16x16.png);
+}
+#set {
+	background-image: url(../img/set_16x16.png);
+}
+#edition_set{
+	background-image: url(../img/edition_set_16x16.png);
+}
+select {
+	padding: 3px;
+}
+option {
+	padding-right: 10px;
+}
+textarea {
+	display: block;
+	width: 100%;
+	height: 80px;
+	margin-bottom: 5px;
+	padding: 3px 0;
+}
+.harrypotter button,
+.harrypotter select,
+.harrypotter textarea {
+	border: 1px solid #320001;
+}
+.harrypotter button {
+	background-color: #320001;
+	color: white;
+}
+#introduction {
+	font-style: italic;
+	cursor: help;
+}
+#imprint {
+	background: white;
+	color: #333;
+	padding: 4px;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	z-index: 100;
+}

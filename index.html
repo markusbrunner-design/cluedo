@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<title>Cluedo</title>
+		<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-ico; charset=binary" />
+		<link rel="icon" href="/img/favicon.ico" type="image/x-ico; charset=binary" />
+		<link rel="stylesheet" type="text/css" href="css/screen.css" media="all" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="js/main.min.js"></script>
+	</head>		
+	<body>
+		<form>
+			<a id="imprint" href="http://www.kreativmix.de/impressum.html" target="_blank">Imprint</a>
+			<fieldset>
+				<legend id="introduction_legend"></legend>
+				<div id="introduction"></div>
+			</fieldset>
+			<div id="presettings">
+				<fieldset>
+					<legend id="presettings_legend"></legend>
+					<select id="language" name="language"></select>
+					<select id="edition" name="edition"></select>
+					<button id="edition_set"></button>
+				</fieldset>
+			</div>
+			<div id="application"></div>
+			<div id="actions">
+				<fieldset>
+					<legend id="actions_legend"></legend>
+					<textarea id="output" readonly="readonly"></textarea>
+					<div>
+						<button id="set"></button>
+						<button id="start"></button>
+						<button id="crime"></button>
+						<button id="ask"></button>
+						<button id="reset"></button>
+					</div>
+				</fieldset>
+			</div>
+		</form>
+		<script type="text/javascript"> 
+			var $buoop = {vs:{i:9,f:10,o:11,s:5,n:9}} 
+			$buoop.ol = window.onload; 
+			window.onload=function(){ 
+			 try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
+			 var e = document.createElement("script"); 
+			 e.setAttribute("type", "text/javascript"); 
+			 e.setAttribute("src", "http://browser-update.org/update.js"); 
+			 document.body.appendChild(e); 
+			} 
+		</script>
+	</body>	
+</html>
